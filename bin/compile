@@ -512,8 +512,8 @@ case "${TOOL}" in
 
         massagePkgSpecForVendor
 
-        step "Running: go install -v ${FLAGS[@]} ${pkgs}"
-        go install -v "${FLAGS[@]}" ${pkgs} 2>&1
+        step "Running: make build"
+        make build 2>&1
     ;;
     gb)
         ensureGB "${GBVersion}"
